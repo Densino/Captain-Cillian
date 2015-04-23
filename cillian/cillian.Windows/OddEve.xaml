@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="cillian.OddEve"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:cillian"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid PointerMoved="ptr_moved">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/oddEveBck.png"/>
+        </Grid.Background>
+        <Image x:Name="img1" HorizontalAlignment="Left" Height="179" Margin="-14,609,0,-20" VerticalAlignment="Top" Width="224" Source="Assets/OddEve/Fish1.png" RenderTransformOrigin="0.5,0.5" PointerPressed="fish1_pressed" PointerReleased="fish1_released" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-15.903"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="img2" HorizontalAlignment="Left" Height="179" Margin="254,522,0,0" VerticalAlignment="Top" Width="224" Source="Assets/OddEve/Fish2.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PointerPressed="fish2_pressed" PointerReleased="fish2_released">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="5.071"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="img3" HorizontalAlignment="Left" Height="179" Margin="101,525,0,0" VerticalAlignment="Top" Width="224" Source="Assets/OddEve/Fish3.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PointerPressed="fish3_pressed" PointerReleased="fish3_released">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="28.652"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="img4" HorizontalAlignment="Left" Height="179" Margin="508,635,0,-46" VerticalAlignment="Top" Width="224" Source="Assets/OddEve/Fish4.png" RenderTransformOrigin="0.5,0.5" PointerPressed="fish4_pressed" PointerReleased="fish4_released" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-15.903"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="backBtn" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Source="ms-appx:///Assets/Back.png" Tapped="backBtn_Tapped"/>
+        <Image x:Name="img5" HorizontalAlignment="Left" Height="179" Margin="180,623,0,-34" VerticalAlignment="Top" Width="224" Source="Assets/OddEve/Fish5.png" RenderTransformOrigin="0.5,0.5" PointerPressed="fish5_pressed" PointerReleased="fish5_released" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="1.614"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="img6" HorizontalAlignment="Left" Height="179" Margin="456,537,0,0" VerticalAlignment="Top" Width="224" Source="Assets/OddEve/Fish6.png" RenderTransformOrigin="0.5,0.5" PointerPressed="fish6_pressed" PointerReleased="fish6_released" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-15.903"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="img7" HorizontalAlignment="Left" Height="179" Margin="586,549,0,0" VerticalAlignment="Top" Width="224" Source="Assets/OddEve/Fish7.png" RenderTransformOrigin="0.5,0.5" PointerPressed="fish7_pressed" PointerReleased="fish7_released" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="3.14"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="img8" HorizontalAlignment="Left" Height="179" Margin="334,601,0,-12" VerticalAlignment="Top" Width="224" Source="Assets/OddEve/Fish8.png" RenderTransformOrigin="0.5,0.5" PointerPressed="fish8_pressed" PointerReleased="fish8_released" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-15.903"/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="title" HorizontalAlignment="Left" Margin="906,10,0,0" TextWrapping="Wrap" Text="Fishy Business" VerticalAlignment="Top" Height="61" Width="386" FontSize="48" FontFamily="Lucida Calligraphy" Foreground="#FF03A603"/>
+        <TextBlock x:Name="subHeading" HorizontalAlignment="Left" Height="147" Margin="906,76,0,0" TextWrapping="Wrap" Text="Captain Cillian has just arrived home from a fishing trip! Help him sort his catch into the odd and even barrels" VerticalAlignment="Top" Width="386" FontSize="24" FontFamily="Lucida Calligraphy" Foreground="#FF03A603"/>
+        <MediaElement x:Name="fishMedia" AutoPlay="False" HorizontalAlignment="Left" Height="204" Margin="940,494,0,0" VerticalAlignment="Top" Width="308" Source="Assets/Watersplash.wav" Position="0:0:3"/>
+
+    </Grid>
+</Page>

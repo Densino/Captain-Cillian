@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1744176-F754-4B79-A8CE-8CF6310DD7E4}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cillian</RootNamespace>
+    <AssemblyName>cillian.Windows</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <SynthesizeLinkMetadata>true</SynthesizeLinkMetadata>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>cillian.Windows_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <SDKReference Include="Bing.Maps.Xaml, Version=1.313.0825.0">
+      <Name>Bing Maps for C#, C++, or Visual Basic</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.VCLibs, version=12.0">
+      <Name>Microsoft Visual C++ 2013 Runtime Package for Windows</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Create.xaml.cs">
+      <DependentUpon>Create.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Create2.xaml.cs">
+      <DependentUpon>Create2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Explore.xaml.cs">
+      <DependentUpon>Explore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Explore2.xaml.cs">
+      <DependentUpon>Explore2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fun3.xaml.cs">
+      <DependentUpon>Fun3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FunQ\FunQ10.xaml.cs">
+      <DependentUpon>FunQ10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FunQ\FunQ2.xaml.cs">
+      <DependentUpon>FunQ2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FunQ\FunQ3.xaml.cs">
+      <DependentUpon>FunQ3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FunQ\FunQ4.xaml.cs">
+      <DependentUpon>FunQ4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FunQ\FunQ5.xaml.cs">
+      <DependentUpon>FunQ5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FunQ\FunQ6.xaml.cs">
+      <DependentUpon>FunQ6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FunQ\FunQ7.xaml.cs">
+      <DependentUpon>FunQ7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FunQ\FunQ8.xaml.cs">
+      <DependentUpon>FunQ8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FunQ\FunQ9.xaml.cs">
+      <DependentUpon>FunQ9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FunQ\FunQuiz.xaml.cs">
+      <DependentUpon>FunQuiz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Learn.xaml.cs">
+      <DependentUpon>Learn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\MathsQuestion10.xaml.cs">
+      <DependentUpon>MathsQuestion10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\MathsQuestion2.xaml.cs">
+      <DependentUpon>MathsQuestion2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\MathsQuestion3.xaml.cs">
+      <DependentUpon>MathsQuestion3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\MathsQuestion4.xaml.cs">
+      <DependentUpon>MathsQuestion4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\MathsQuestion5.xaml.cs">
+      <DependentUpon>MathsQuestion5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\MathsQuestion6.xaml.cs">
+      <DependentUpon>MathsQuestion6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\MathsQuestion7.xaml.cs">
+      <DependentUpon>MathsQuestion7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\MathsQuestion8.xaml.cs">
+      <DependentUpon>MathsQuestion8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\MathsQuestion9.xaml.cs">
+      <DependentUpon>MathsQuestion9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Maths\MathsQuiz.xaml.cs">
+      <DependentUpon>MathsQuiz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DemoItem.cs" />
+    <Compile Include="OddEve.xaml.cs">
+      <DependentUpon>OddEve.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PicMatch.xaml.cs">
+      <DependentUpon>PicMatch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Science\ScienceQuiz.xaml.cs">
+      <DependentUpon>ScienceQuiz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Science\SciQ10.xaml.cs">
+      <DependentUpon>SciQ10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Science\SciQ2.xaml.cs">
+      <DependentUpon>SciQ2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Science\SciQ3.xaml.cs">
+      <DependentUpon>SciQ3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Science\SciQ4.xaml.cs">
+      <DependentUpon>SciQ4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Science\SciQ5.xaml.cs">
+      <DependentUpon>SciQ5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Science\SciQ6.xaml.cs">
+      <DependentUpon>SciQ6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Science\SciQ7.xaml.cs">
+      <DependentUpon>SciQ7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Science\SciQ8.xaml.cs">
+      <DependentUpon>SciQ8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Science\SciQ9.xaml.cs">
+      <DependentUpon>SciQ9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SoundGame.xaml.cs">
+      <DependentUpon>SoundGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StormySea\StormySea8.xaml.cs">
+      <DependentUpon>StormySea8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StormySea\StormySea7.xaml.cs">
+      <DependentUpon>StormySea7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StormySea\StormySea6.xaml.cs">
+      <DependentUpon>StormySea6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StormySea\StormySea5.xaml.cs">
+      <DependentUpon>StormySea5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StormySea\StormySea4.xaml.cs">
+      <DependentUpon>StormySea4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StormySea\StormySea3.xaml.cs">
+      <DependentUpon>StormySea3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StormySea\StormySea2.xaml.cs">
+      <DependentUpon>StormySea2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StormySea\StormySea1.xaml.cs">
+      <DependentUpon>StormySea1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Technology\TechnologyQuiz.xaml.cs">
+      <DependentUpon>TechnologyQuiz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Technology\TechQ10.xaml.cs">
+      <DependentUpon>TechQ10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Technology\TechQ2.xaml.cs">
+      <DependentUpon>TechQ2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Technology\TechQ3.xaml.cs">
+      <DependentUpon>TechQ3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Technology\TechQ4.xaml.cs">
+      <DependentUpon>TechQ4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Technology\TechQ5.xaml.cs">
+      <DependentUpon>TechQ5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Technology\TechQ6.xaml.cs">
+      <DependentUpon>TechQ6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Technology\TechQ7.xaml.cs">
+      <DependentUpon>TechQ7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Technology\TechQ8.xaml.cs">
+      <DependentUpon>TechQ8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Technology\TechQ9.xaml.cs">
+      <DependentUpon>TechQ9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\MainViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="cillian.Windows_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Back.png" />
+    <Content Include="Assets\bananas.png" />
+    <Content Include="Assets\Barrel.png" />
+    <Content Include="Assets\boat2.png" />
+    <Content Include="Assets\btnFun.png" />
+    <Content Include="Assets\btnMaths.png" />
+    <Content Include="Assets\btnScience.png" />
+    <Content Include="Assets\btnTechnology.png" />
+    <Content Include="Assets\CaptainCillianLogo.png" />
+    <Content Include="Assets\Chalkboard.png" />
+    <Content Include="Assets\chimpsound.mp3" />
+    <Content Include="Assets\coconuts.png" />
+    <Content Include="Assets\Coconut_tree.png" />
+    <Content Include="Assets\crab.png" />
+    <Content Include="Assets\Create.png" />
+    <Content Include="Assets\dolphin.png" />
+    <Content Include="Assets\dolphin1.wav" />
+    <Content Include="Assets\Elephant-35.png" />
+    <Content Include="Assets\elephantSound.wav" />
+    <Content Include="Assets\Explore.png" />
+    <Content Include="Assets\ExplorerCillian.png" />
+    <Content Include="Assets\Fish.png" />
+    <Content Include="Assets\Fun.png" />
+    <Content Include="Assets\HappyPirate.wav" />
+    <Content Include="Assets\HarbourSound.wav" />
+    <Content Include="Assets\HomeScreen.png" />
+    <Content Include="Assets\Learn.png" />
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\MagicCillian.png" />
+    <Content Include="Assets\monkey1.png" />
+    <Content Include="Assets\monkey2.png" />
+    <Content Include="Assets\monkey3.png" />
+    <Content Include="Assets\oddEveBck.png" />
+    <Content Include="Assets\OddEve\Fish8.png" />
+    <Content Include="Assets\OddEve\Fish7.png" />
+    <Content Include="Assets\OddEve\Fish6.png" />
+    <Content Include="Assets\OddEve\Fish5.png" />
+    <Content Include="Assets\OddEve\Fish4.png" />
+    <Content Include="Assets\OddEve\Fish3.png" />
+    <Content Include="Assets\OddEve\Fish2.png" />
+    <Content Include="Assets\OddEve\Fish1.png" />
+    <Content Include="Assets\parrot.png" />
+    <Content Include="Assets\ParrotSound.wav" />
+    <Content Include="Assets\PicMatchBtn.png" />
+    <Content Include="Assets\Pirate.png" />
+    <Content Include="Assets\PirateCillian.png" />
+    <Content Include="Assets\Puffin-37.png" />
+    <Content Include="Assets\screenshot.png" />
+    <Content Include="Assets\scroll.jpg" />
+    <Content Include="Assets\Seagul.png" />
+    <Content Include="Assets\SeagullSound.wav" />
+    <Content Include="Assets\seahorse.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\Snake-34.png" />
+    <Content Include="Assets\snakeSound.mp3" />
+    <Content Include="Assets\soundGame.png" />
+    <Content Include="Assets\Spider.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\Splashscreen.scale-180.png" />
+    <Content Include="Assets\starfish.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StormySound.wav" />
+    <Content Include="Assets\Tiger-36-2.png" />
+    <Content Include="Assets\TigerSound.mp3" />
+    <Content Include="Assets\Treasure.png" />
+    <Content Include="Assets\TreasureMap.png" />
+    <Content Include="Assets\turtle.png" />
+    <Content Include="Assets\UnderSea.png" />
+    <Content Include="Assets\SunnySky.png" />
+    <Content Include="Assets\Watersplash.wav" />
+    <Content Include="Assets\whale.png" />
+    <Content Include="StormySea\Harbour.png" />
+    <Content Include="StormySea\SailingStorm.png" />
+    <Content Include="StormySea\SailingStorm2.png" />
+    <Content Include="StormySea\SettingSail.png" />
+    <Content Include="StormySea\StormySeaCover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Create.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Create2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Explore.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Explore2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fun3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FunQ\FunQ10.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FunQ\FunQ2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FunQ\FunQ3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FunQ\FunQ4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FunQ\FunQ5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FunQ\FunQ6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FunQ\FunQ7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FunQ\FunQ8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FunQ\FunQ9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FunQ\FunQuiz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Learn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Maths\MathsQuestion10.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Maths\MathsQuestion2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Maths\MathsQuestion3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Maths\MathsQuestion4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Maths\MathsQuestion5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Maths\MathsQuestion6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Maths\MathsQuestion7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Maths\MathsQuestion8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Maths\MathsQuestion9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Maths\MathsQuiz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OddEve.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PicMatch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Science\ScienceQuiz.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Science\SciQ10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Science\SciQ2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Science\SciQ3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Science\SciQ4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Science\SciQ5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Science\SciQ6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Science\SciQ7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Science\SciQ8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Science\SciQ9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SoundGame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="StormySea\StormySea8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StormySea\StormySea7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StormySea\StormySea6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StormySea\StormySea5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StormySea\StormySea4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StormySea\StormySea3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StormySea\StormySea2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StormySea\StormySea1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Technology\TechnologyQuiz.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Technology\TechQ10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Technology\TechQ2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Technology\TechQ3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Technology\TechQ4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Technology\TechQ5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Technology\TechQ6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Technology\TechQ7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Technology\TechQ8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Technology\TechQ9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="..\cillian.Shared\cillian.Shared.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

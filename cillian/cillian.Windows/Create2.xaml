@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="cillian.Create2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:cillian"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid PointerMoved="ptr_moved" Margin="0,0,0,10" RenderTransformOrigin="0.5,0.5" >
+        <Grid.RenderTransform>
+            <CompositeTransform/>
+        </Grid.RenderTransform>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/Learn.png"/>
+        </Grid.Background>
+
+        <ListBox HorizontalAlignment="Left" Height="738" Margin="1191,10,0,0" VerticalAlignment="Top" Width="175">
+            <Image Tag="bananas" x:Name="cImg1" Height="163" Width="191" Source="Assets/bananas.png" Tapped="cImg1_Tapped"/>
+            <Image Tag="barrel" x:Name="cImg2" Height="163" Width="191" Source="Assets/Barrel.png" Tapped="cImg2_Tapped"/>
+            <Image Tag="coconuttree" x:Name="cImg3" Height="163" Width="191" Source="Assets/Coconut_tree.png" Tapped="cImg3_Tapped"/>
+            <Image Tag="coconut" x:Name="cImg4" Height="163" Width="191" Source="Assets/coconuts.png" Tapped="cImg4_Tapped"/>
+            <Image Tag="crab" x:Name="cImg5" Height="163" Width="191" Source="Assets/crab.png" Tapped="cImg5_tapped"/>
+            <Image Tag="dolphin" x:Name="cImg6" Height="163" Width="191" Source="Assets/dolphin.png" Tapped="cImg6_tapped"/>
+            <Image Tag="fish" x:Name="cImg7" Height="163" Width="191" Source="Assets/Fish.png" Tapped="cImg7_tapped"/>
+            <Image Tag="magicCillian" x:Name="cImg8" Height="163" Width="191" Source="Assets/MagicCillian.png" Tapped="cImg8_tapped"/>
+            <Image Tag="monkey1" x:Name="cImg9" Height="163" Width="191" Source="Assets/monkey1.png" Tapped="cImg9_tapped"/>
+            <Image Tag="cillian" x:Name="cImg10" Height="163" Width="191" Source="Assets/PirateCillian.png" Tapped="cImg10_tapped"/>
+            <Image Tag="monkey3" x:Name="cImg11" Height="163" Width="191" Source="Assets/monkey3.png" Tapped="cImg11_tapped"/>
+            <Image Tag="parrot" x:Name="cImg12" Height="163" Width="191" Source="Assets/parrot.png" Tapped="cImg12_tapped"/>
+            <Image Tag="pirate" x:Name="cImg13" Height="163" Width="191" Source="Assets/Pirate.png" Tapped="cImg13_tapped"/>
+            <Image Tag="seagul" x:Name="cImg14" Height="163" Width="191" Source="Assets/Seagul.png" Tapped="cImg14_tapped"/>
+            <Image Tag="seahorse" x:Name="cImg15" Height="163" Width="191" Source="Assets/seahorse.png" Tapped="cImg15_tapped"/>
+            <Image Tag="spider" x:Name="cImg16" Height="163" Width="191" Source="Assets/Spider.png" Tapped="cImg16_tapped"/>
+            <Image Tag="starfish" x:Name="cImg17" Height="163" Width="191" Source="Assets/starfish.png" Tapped="cImg17_tapped"/>
+            <Image Tag="treasure" x:Name="cImg18" Height="163" Width="191" Source="Assets/Treasure.png" Tapped="cImg18_tapped"/>
+            <Image Tag="turtle" x:Name="cImg19" Height="163" Width="191" Source="Assets/turtle.png" Tapped="cImg19_tapped"/>
+            <Image Tag="whale" x:Name="cImg20" Height="163" Width="191" Source="Assets/whale.png" Tapped="cImg20_tapped"/>
+        </ListBox>
+        <Ellipse Fill="#FF51EECA" HorizontalAlignment="Left" Height="223" Margin="10,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="603"/>
+        <TextBox HorizontalAlignment="Left" Height="138" Margin="84,567,0,0" TextWrapping="Wrap" Text="Write Your Story Here!" VerticalAlignment="Top" Width="459" Background="#FF51EECA" BorderThickness="0" FontSize="18" FontFamily="Segoe Print"/>
+        <Image x:Name="display2Image" Tag="display2Image" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img1_pressed2" PointerReleased="img1_release2"/>
+        <Image x:Name="display2Img2" Tag=" displayImg2" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img2_pressed2" PointerReleased="img2_release2"/>
+        <Image x:Name="display2Img3" Tag=" displayImg3" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img3_pressed2" PointerReleased="img3_release2"/>
+        <Image x:Name="display2Img4" Tag=" displayImg4" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img4_pressed2" PointerReleased="img4_release2"/>
+        <Image x:Name="display2Img5" Tag=" displayImg5" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img5_pressed2" PointerReleased="img5_release2" />
+        <Image x:Name="display2Img6" Tag=" displayImg6" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img6_pressed2" PointerReleased="img6_release2" />
+        <Image x:Name="display2Img7" Tag=" displayImg7" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img7_pressed2" PointerReleased="img7_release2" />
+        <Image x:Name="display2Img8" Tag=" displayImg8" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img8_pressed2" PointerReleased="img8_release2" />
+        <Image x:Name="display2Img9" Tag=" displayImg9" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img9_pressed2" PointerReleased="img9_release2" />
+        <Image x:Name="display2Img10" Tag=" displayImg10" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img10_pressed2" PointerReleased="img10_release2" />
+        <Image x:Name="display2Img11" Tag=" displayImg11" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img11_pressed2" PointerReleased="img11_release2" />
+        <Image x:Name="display2Img12" Tag=" displayImg12" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img12_pressed2" PointerReleased="img12_release2" />
+        <Image x:Name="display2Img13" Tag=" displayImg13" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img13_pressed2" PointerReleased="img13_release2" />
+        <Image x:Name="display2Img14" Tag=" displayImg14" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img14_pressed2" PointerReleased="img14_release2" />
+        <Image x:Name="display2Img15" Tag=" displayImg15" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img15_pressed2" PointerReleased="img15_release2" />
+        <Image x:Name="display2Img16" Tag=" displayImg16" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img16_pressed2" PointerReleased="img16_release2" />
+        <Image x:Name="display2Img17" Tag=" displayImg17" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img17_pressed2" PointerReleased="img17_release2" />
+        <Image x:Name="display2Img18" Tag=" displayImg18" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img18_pressed2" PointerReleased="img18_release2" />
+        <Image x:Name="display2Img19" Tag=" displayImg19" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img19_pressed2" PointerReleased="img19_release2" />
+        <Image x:Name="display2Img20" Tag=" displayImg20" HorizontalAlignment="Left" Height="163" Margin="992,303,0,0" VerticalAlignment="Top" Width="170" PointerPressed="img20_pressed2" PointerReleased="img20_release2" />
+        <Image x:Name="backBtn" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Source="Assets/Back.png" Tapped="backBtn_Tapped"/>
+        <Button x:Name="btnScreenshot" HorizontalAlignment="Left" Margin="886,651,0,0" VerticalAlignment="Top" Height="105" Width="279" Click="btnScreenshot_Click" BorderBrush="Black" Foreground="Black">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Image Source="Assets/screenshot.png" Width="48" />
+                <TextBlock Text="Take screenshot" Style="{StaticResource SubheaderTextBlockStyle}" />
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Page>

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DENNIS-PC</Machine>
+    <WindowsUser>Emily</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>6eb26fac-ce7c-41b6-aa7e-378854ae9939</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\cillian.Windows.exe">
+      <PackagePath>cillian.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\Back.png">
+      <PackagePath>Assets\Back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\bananas.png">
+      <PackagePath>Assets\bananas.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\boat2.png">
+      <PackagePath>Assets\boat2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\btnFun.png">
+      <PackagePath>Assets\btnFun.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\btnMaths.png">
+      <PackagePath>Assets\btnMaths.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\btnScience.png">
+      <PackagePath>Assets\btnScience.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\btnTechnology.png">
+      <PackagePath>Assets\btnTechnology.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\Chalkboard.png">
+      <PackagePath>Assets\Chalkboard.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\Create.png">
+      <PackagePath>Assets\Create.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\dolphin.png">
+      <PackagePath>Assets\dolphin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\Explore.png">
+      <PackagePath>Assets\Explore.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\ExplorerCillian.png">
+      <PackagePath>Assets\ExplorerCillian.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\Fun.png">
+      <PackagePath>Assets\Fun.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\HomeScreen.png">
+      <PackagePath>Assets\HomeScreen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\Learn.png">
+      <PackagePath>Assets\Learn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\parrot.png">
+      <PackagePath>Assets\parrot.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\Seagul.png">
+      <PackagePath>Assets\Seagul.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\Splashscreen.scale-180.png">
+      <PackagePath>Assets\Splashscreen.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\TreasureMap.png">
+      <PackagePath>Assets\TreasureMap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\UnderSea.png">
+      <PackagePath>Assets\UnderSea.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\Assets\SunnySky.png">
+      <PackagePath>Assets\SunnySky.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\StormySea\Harbour.png">
+      <PackagePath>StormySea\Harbour.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\StormySea\SailingStorm.png">
+      <PackagePath>StormySea\SailingStorm.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\StormySea\SailingStorm2.png">
+      <PackagePath>StormySea\SailingStorm2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\StormySea\SettingSail.png">
+      <PackagePath>StormySea\SettingSail.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\StormySea\StormySeaCover.png">
+      <PackagePath>StormySea\StormySeaCover.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Create.xbf">
+      <PackagePath>Create.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Explore.xbf">
+      <PackagePath>Explore.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Explore2.xbf">
+      <PackagePath>Explore2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Fun.xbf">
+      <PackagePath>Fun.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\FunQ\FunQ10.xbf">
+      <PackagePath>FunQ\FunQ10.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\FunQ\FunQ2.xbf">
+      <PackagePath>FunQ\FunQ2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\FunQ\FunQ3.xbf">
+      <PackagePath>FunQ\FunQ3.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\FunQ\FunQ4.xbf">
+      <PackagePath>FunQ\FunQ4.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\FunQ\FunQ5.xbf">
+      <PackagePath>FunQ\FunQ5.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\FunQ\FunQ6.xbf">
+      <PackagePath>FunQ\FunQ6.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\FunQ\FunQ7.xbf">
+      <PackagePath>FunQ\FunQ7.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\FunQ\FunQ8.xbf">
+      <PackagePath>FunQ\FunQ8.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\FunQ\FunQ9.xbf">
+      <PackagePath>FunQ\FunQ9.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\FunQ\FunQuiz.xbf">
+      <PackagePath>FunQ\FunQuiz.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Learn.xbf">
+      <PackagePath>Learn.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Maths\MathsQuestion10.xbf">
+      <PackagePath>Maths\MathsQuestion10.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Maths\MathsQuestion2.xbf">
+      <PackagePath>Maths\MathsQuestion2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Maths\MathsQuestion3.xbf">
+      <PackagePath>Maths\MathsQuestion3.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Maths\MathsQuestion4.xbf">
+      <PackagePath>Maths\MathsQuestion4.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Maths\MathsQuestion5.xbf">
+      <PackagePath>Maths\MathsQuestion5.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Maths\MathsQuestion6.xbf">
+      <PackagePath>Maths\MathsQuestion6.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Maths\MathsQuestion7.xbf">
+      <PackagePath>Maths\MathsQuestion7.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Maths\MathsQuestion8.xbf">
+      <PackagePath>Maths\MathsQuestion8.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Maths\MathsQuestion9.xbf">
+      <PackagePath>Maths\MathsQuestion9.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Maths\MathsQuiz.xbf">
+      <PackagePath>Maths\MathsQuiz.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Science\ScienceQuiz.xbf">
+      <PackagePath>Science\ScienceQuiz.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Science\SciQ2.xbf">
+      <PackagePath>Science\SciQ2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Science\SciQ3.xbf">
+      <PackagePath>Science\SciQ3.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Science\SciQ4.xbf">
+      <PackagePath>Science\SciQ4.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\Science\SciQ5.xbf">
+      <PackagePath>Science\SciQ5.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\StormySea\StormySea8.xbf">
+      <PackagePath>StormySea\StormySea8.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\StormySea\StormySea7.xbf">
+      <PackagePath>StormySea\StormySea7.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\StormySea\StormySea6.xbf">
+      <PackagePath>StormySea\StormySea6.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\StormySea\StormySea5.xbf">
+      <PackagePath>StormySea\StormySea5.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\StormySea\StormySea4.xbf">
+      <PackagePath>StormySea\StormySea4.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\StormySea\StormySea3.xbf">
+      <PackagePath>StormySea\StormySea3.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\StormySea\StormySea2.xbf">
+      <PackagePath>StormySea\StormySea2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\StormySea\StormySea1.xbf">
+      <PackagePath>StormySea\StormySea1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\cillian.Windows.xr.xml">
+      <PackagePath>cillian.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Emily\Desktop\Captain Cillian TM\cillian\cillian\cillian.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

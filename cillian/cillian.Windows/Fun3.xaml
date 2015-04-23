@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="cillian.Fun"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:cillian"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="StormySea/Harbour.png"/>
+        </Grid.Background>
+        <Image x:Name="funBtn2" HorizontalAlignment="Left" Height="287" Margin="519,10,0,0" VerticalAlignment="Top" Width="324" Source="Assets/Fish.png" Stretch="UniformToFill" Tapped="OddandEven_Tapped"/>
+        <Image x:Name="funBtn1" HorizontalAlignment="Left" Height="180" Margin="198,519,0,0" VerticalAlignment="Top" Width="312" Source="Assets/PicMatchBtn.png" Tapped="picMatch_Tapped"/>
+        <Image x:Name="backBtn" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Source="Assets/Back.png" Tapped="backBtn_Tapped"/>
+        <Image x:Name="funBtn3" HorizontalAlignment="Left" Height="180" Margin="882,519,0,0" VerticalAlignment="Top" Width="312" Source="Assets/soundGame.png" Tapped="soundGame_Tapped"/>
+        <TextBlock x:Name="fun1title" HorizontalAlignment="Left" Height="59" Margin="198,699,0,0" TextWrapping="Wrap" Text="Picture Matching" VerticalAlignment="Top" Width="336" FontSize="36" FontFamily="Segoe Print" Foreground="#FF03A603"/>
+        <TextBlock x:Name="fun2title" HorizontalAlignment="Left" Height="59" Margin="842,699,0,0" TextWrapping="Wrap" Text="Cillians Animal Friends" VerticalAlignment="Top" Width="434" FontSize="36" FontFamily="Segoe Print" Foreground="#FF03A603" RenderTransformOrigin="0.498,0.559"/>
+        <TextBlock x:Name="fun3Title" HorizontalAlignment="Left" Height="59" Margin="570,49,0,0" TextWrapping="Wrap" Text="Fishy Business" VerticalAlignment="Top" Width="336" FontSize="36" FontFamily="Segoe Print" Foreground="#FF03A603"/>
+
+    </Grid>
+</Page>
